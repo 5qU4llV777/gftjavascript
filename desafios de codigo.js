@@ -25,20 +25,19 @@ print("Voce ganhou " + xpGanho + " XP!");
 // desafio 3
 
 let escolhaDoTreinador = parseInt(gets());
-let pokemonEscolhido; 
+let pokemonEscolhido;
 
-// Implementa as condições necessárias para a escolha do Pokémon
 if (escolhaDoTreinador === 1) {
     pokemonEscolhido = "Bulbasaur";
 } else if (escolhaDoTreinador === 2) {
     pokemonEscolhido = "Charmander";
-} else if (escolhaDoTreinador === 3) {
+} else if (escolhaDoTreinador === 4) {
     pokemonEscolhido = "Pikachu";
+} else if (escolhaDoTreinador === 5) {
+    pokemonEscolhido = "Mewtwo";
 } else {
-    pokemonEscolhido = "Mewtwo"; // Pokémon default para escolha inválida
+    pokemonEscolhido = "Escolha inválida"; // Mensagem para escolha inválida
 }
 
-// Imprime o Pokémon escolhido
-if (pokemonEscolhido) {
-    print("Voce escolheu o " + pokemonEscolhido + " como seu Pokemon inicial.");
-}
+print("Voce escolheu o " + pokemonEscolhido + " como seu Pokemon inicial.");
+
