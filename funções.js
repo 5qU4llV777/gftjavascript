@@ -65,3 +65,57 @@ createStringConnect("db_products", "claudio", "9999")
 function createStringConnect(databaseName, user, pass){
     console.log(`connect:DBCONNECT;user=${user};pass=${pass};initial_database=${databaseName}`)
 }
+
+
+/////////////////////////////////////////////
+//funções com retorno
+
+let resultado = soma(5, 10)
+
+console.log("O Resultado dessa função é " + resultado)
+
+function soma(numA, numB){
+    let somatorio = numA + numB
+    return somatorio
+
+}
+
+///////////////////////////////////////////////
+
+let resultado = soma(5, 10)
+
+console.log("O Resultado dessa função é " + resultado)
+
+function soma(numA, numB){
+    let somatorio = [3, 11, 90]
+    return somatorio
+
+}
+
+////////////////////////////////////////////
+//
+
+let userName = getFirstName("Claudio Nogueira")
+
+console.log("Seja bem vindo " + userName)
+
+function getFirstName(name){
+    let firstName = name.split(" ")[0]
+    return firstName
+}
+
+///////////////////////////////////////////
+// splitchar
+
+let userName = getFirstName("Claudio Nogueira", " ")
+
+console.log("Seja bem vindo " + userName)
+
+userName = getFirstName("Dona-bendi", "-")
+console.log("Seja bem vindo " + userName)
+
+
+function getFirstName(name, splitchar){
+    let firstName = name.split(splitchar)[0]
+    return firstName
+}
