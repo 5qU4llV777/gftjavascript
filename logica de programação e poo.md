@@ -141,8 +141,7 @@ As estruturas de controle são similares ao que você já conhece, com if, else,
 ```javascript
 Programação Orientada a Objetos (POO)
 1. Classe Livro
-javascript
-Copiar código
+
 class Livro {
     constructor(titulo, autor, isbn) {
         this.titulo = titulo;
@@ -165,8 +164,7 @@ class Livro {
     }
 }
 2. Classe Usuario
-javascript
-Copiar código
+
 class Usuario {
     constructor(nome, idUsuario) {
         this.nome = nome;
@@ -192,8 +190,7 @@ class Usuario {
     }
 }
 3. Classe Biblioteca
-javascript
-Copiar código
+
 class Biblioteca {
     constructor() {
         this.livros = []; // Array para armazenar livros na biblioteca
@@ -214,8 +211,7 @@ A lógica de programação é usada para definir como as classes e objetos inter
 Exemplo de Uso
 Aqui está um exemplo simples de como você poderia usar essas classes em um script:
 
-javascript
-Copiar código
+
 const biblioteca = new Biblioteca();
 const livro1 = new Livro("1984", "George Orwell", "123456");
 const livro2 = new Livro("Dom Casmurro", "Machado de Assis", "654321");
